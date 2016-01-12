@@ -1,114 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
-  <meta charset="UTF-8">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>
     
-      Poole &middot; The Jekyll Butler
+    <!--
+        redirect users to the https version of the website.
+        but: only check when on the production domain, as set in _config.yml.
+    -->
+    <script type="text/javascript">
+      var host = "xiwan.info";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location = window.location.toString().replace(/^http:/, "https:");
+    </script>
     
-  </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Poole" href="/atom.xml">
-</head>
-
-
+    <!-- Niklas Buschmann 2015 MIT <http://github.com/niklasbuschmann> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <meta name="description" content="擷英採華，以備不需！">
+    <title> 首頁 › 西灣筆記</title>
+    <link rel="canonical" href="https://xiwan.info/index.html">
+    <link href="/main.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="西灣筆記 &raquo; Feed" href="/feed.xml">
+    <!-- Comments -->
+    
+    
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-67237444-1', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+    </script>
+  </head>
   <body>
+    <header>
+      <h1><a href="/">西灣筆記</a></h1><h2><a href="/about/index.html">擷英採華，以備不需！</a></h2>
+      <nav>
+        <ul>
+          <li><a href="/index.html" id="selected">首頁</a></li> <li><a href="/archive/index.html">舊檔</a></li> <li><a href="/about/index.html">關於</a></li> 
+        </ul>
+      </nav>
+    </header>
+    
+    
+    
+<article>
+  <header>
+    <h2><a href="/archive/how-to-write-a-git-commit-message.html">【譯】如何撰寫Git提交訊息</a></h2>
+    <p><time datetime="2015-11-01T18:00:00+08:00">Nov 1, 2015</time> • Git, Commit Message</p>
+  </header>
+  <div>
+    <p>這篇筆記、翻譯自博文：<a href="http://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a>，作者Chris Beams。尊重他人勞動果實，轉載請註明！</p>
 
-    <div class="container content">
-      <header class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">Poole</a>
-          <small>The Jekyll Butler</small>
-        </h3>
-      </header>
-
-      <main>
-        <div class="posts">
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2014/01/02/introducing-poole/">
-        Introducing Poole
-      </a>
-    </h1>
-
-    <time datetime="2014-01-02T00:00:00+08:00" class="post-date">02 Jan 2014</time>
-
-    <p><em>The Strange Case of Dr. Jekyll and Mr. Hyde</em> tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.</p>
-
-<hr />
-
-<p>Poole is the butler for <a href="http://jekyllrb.com">Jekyll</a>, the static site generator. It’s designed and developed by <a href="https://twitter.com/mdo">@mdo</a> to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.</p>
-
-<p>There are currently two themes built on Poole:</p>
+<p><img src="/assets/imgs/2015/11/01/how-to-write-a-git-commit-message/2015-11-01-01.png" alt="2015-11-01-01.png" /></p>
 
 <ul>
-  <li><a href="http://hyde.getpoole.com">Hyde</a></li>
-  <li><a href="http://lanyon.getpoole.com">Lanyon</a></li>
+  <li><a href="/archive/how-to-write-a-git-commit-message.html#intro">引言</a></li>
+  <li><a href="/archive/how-to-write-a-git-commit-message.html#seven-rules">七條規則</a></li>
+  <li><a href="/archive/how-to-write-a-git-commit-message.html#tips">建議</a>  <br />
+<!--Introduction | The Seven Rules | Tips--></li>
 </ul>
 
-<p>Learn more and contribute on <a href="https://github.com/poole">GitHub</a>.</p>
 
-<h3 id="whats-included">What’s included</h3>
+  </div>
+  <footer>
+    <p><a href="/archive/how-to-write-a-git-commit-message.html">閱讀更多 &raquo;</a></p>
+  </footer>
+</article>
 
-<p>Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:</p>
+<article>
+  <header>
+    <h2><a href="/archive/2015-the-42nd-week-work-note.html">二〇一五年四十二週工作拾遺</a></h2>
+    <p><time datetime="2015-10-25T18:00:00+08:00">Oct 25, 2015</time> • iOS 8, Header, Footer</p>
+  </header>
+  <div>
+    <p>從本篇開始、在下會時不時整理一些名為「工作拾遺」的筆記。「遺」者、吾所闕也；「拾遺」者、補吾所闕也。</p>
+
+<p>iOS提供了UITableview這樣的使用者介面。如果畫個簡圖的話、應當是這樣的：</p>
+
+<p><img src="/assets/imgs/2015/10/25/2015-the-42nd-week-work-note/2015-10-25-01.png" alt="2015-10-25-01.png" /></p>
+
+<p>這篇筆記，與Header/Footer相關，主要講述：</p>
 
 <ul>
-  <li>Complete Jekyll setup included (layouts, config, <a href="/404.html">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-  <li>Mobile friendly design and development</li>
-  <li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-  <li>Support for a wide gamut of HTML elements</li>
-  <li>Related posts (time-based, because Jekyll) below each post</li>
-  <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
+  <li>其一、<a href="/archive/2015-the-42nd-week-work-note.html#table-header-footer-implementation">Table Header/Footer實作</a></li>
+  <li>其二、<a href="/archive/2015-the-42nd-week-work-note.html#section-header-footer-backgroundcolor-setting">Section Header/Footer背景色設置</a></li>
 </ul>
 
-<p>Additional features are available in individual themes.</p>
 
-<h3 id="browser-support">Browser support</h3>
+  </div>
+  <footer>
+    <p><a href="/archive/2015-the-42nd-week-work-note.html">閱讀更多 &raquo;</a></p>
+  </footer>
+</article>
 
-<p>Poole and its themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
+<article>
+  <header>
+    <h2><a href="/archive/use-google-webmasters-optimize-site-search-result.html">使用Google網站管理員最佳化網站搜尋結果</a></h2>
+    <p><time datetime="2015-10-11T18:00:00+08:00">Oct 11, 2015</time> • Google Webmasters, Search Console, Search Result Optimization</p>
+  </header>
+  <div>
+    <p>這篇筆記簡單介紹了如何使用Google網站管理員來最佳化網站搜尋結果，即告知Google如何正確索引網站。</p>
 
-<h3 id="download">Download</h3>
+<p>若要使用「Google網站管理員」，則需具備以下先決條件：</p>
 
-<p>Poole is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/poole">GitHub repository</a> for downloads, bug reports, and features requests.</p>
+<ul>
+  <li>擁有Google帳號</li>
+  <li>持有網站擁有權</li>
+</ul>
 
-<p>Thanks!</p>
+<p>內容索引：</p>
 
-  </article>
-  
-</div>
+<ul>
+  <li><a href="/archive/use-google-webmasters-optimize-site-search-result.html#google-webmasters">Google網站管理員</a></li>
+  <li><a href="/archive/use-google-webmasters-optimize-site-search-result.html#verify-site-ownership">驗證網站擁有權</a></li>
+  <li><a href="/archive/use-google-webmasters-optimize-site-search-result.html#use-search-console">使用Search Console</a></li>
+  <li><a href="/archive/use-google-webmasters-optimize-site-search-result.html#remove-outdated-content">移除過舊的內容</a></li>
+  <li><a href="/archive/use-google-webmasters-optimize-site-search-result.html#additional-words">編後語</a></li>
+</ul>
 
-<div class="pagination">
-  
-    <a class="pagination-item older" href="/page2">Older</a>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
-</div>
 
-      </main>
+  </div>
+  <footer>
+    <p><a href="/archive/use-google-webmasters-optimize-site-search-result.html">閱讀更多 &raquo;</a></p>
+  </footer>
+</article>
 
-      <footer class="footer">
-        <small>
-          &copy; <time datetime="2016-01-12T22:20:33+08:00">2016</time>. All rights reserved.
-        </small>
-      </footer>
-    </div>
+<article>
+  <header>
+    <h2><a href="/archive/string-split-strtok-strtok-r-strsep.html">字串切割：strtok、strtok_r與strsep</a></h2>
+    <p><time datetime="2015-09-06T18:00:00+08:00">Sep 6, 2015</time> • C, strtok, strtok_r, strsep</p>
+  </header>
+  <div>
+    <p>對於字串切割、C標準函式庫提供了這幾個函式：strtok，strtok_r，strsep；使用時、只需要包含表頭檔string.h即可。詳細說明，參考連結：<a href="http://man7.org/linux/man-pages/man3/strtok.3.html">strtok(3)</a>，<a href="http://man7.org/linux/man-pages/man3/strsep.3.html">strsep(3)</a>。</p>
 
+<p>由於C語言本身的限制以及在執行效率/資源佔有方面的考量與妥協、這些函式顯得並不那麼好用，甚而讓人不禁懷疑「誒？這真的是標準庫提供的函式麼？」。這篇筆記用來記述它們的使用方法、以及一些注意點。</p>
+
+<p>在分述它們的不同之處之前、先說說它們的共同之處吧：</p>
+
+<ul>
+  <li>其一、呼叫函式會修改原字串內容（將切割符改為<code>'\0'</code>），故待切割字串不可為無法修改的字串字面常數(string literal)。</li>
+  <li>其二、單次呼叫只能完成一次切割、而不是直接提供切割完畢的字串數組。</li>
+  <li>其三、關於切割符字串（更確切的說、切割符集合），其內任一字符（而不是整體）都是切割符，而且在每次呼叫函式時都可以依據需求採用相同/不同的字串。</li>
+</ul>
+
+
+  </div>
+  <footer>
+    <p><a href="/archive/string-split-strtok-strtok-r-strsep.html">閱讀更多 &raquo;</a></p>
+  </footer>
+</article>
+
+<article>
+  <header>
+    <h2><a href="/archive/git-correct-commits-of-author-info.html">Git修改提交(commits)的作者資訊</a></h2>
+    <p><time datetime="2015-08-30T18:00:00+08:00">Aug 30, 2015</time> • Git, Change Author Info</p>
+  </header>
+  <div>
+    <p>前幾日，在Github上新做存儲庫時、一時失察、居然使用了工作專用的作者資訊。發現時、已經推送了多個提交……怎麼辦？難道要砍掉重做麼？</p>
+
+<p>緊急Google了一番、發現完全不用！解決方法也可以有兩種：</p>
+
+<ul>
+  <li>其一、使用Github提供的方法：<a href="https://help.github.com/articles/changing-author-info/">Changing author info</a>。</li>
+  <li>其二、使用Stack Overflow提供的方法：<a href="https://stackoverflow.com/a/3042512/2518851">Change commit author at one specific commit</a>。</li>
+</ul>
+
+<p>由於是新做的存儲庫、所慮極少，故選用了第一種方法。</p>
+
+
+  </div>
+  <footer>
+    <p><a href="/archive/git-correct-commits-of-author-info.html">閱讀更多 &raquo;</a></p>
+  </footer>
+</article>
+
+
+    <footer>
+      <span><a href="mailto:kenmux@gmail.com">Kenmux Lee</a></span>
+      <span><a href="https://github.com/kenmux/"><i class="fa fa-github-square"></i></a><a href="https://twitter.com/kenmuxlee/"><i class="fa fa-twitter-square"></i></a><a href="https://plus.google.com/+KenmuxDe"><i class="fa fa-google-plus-square"></i></a><a href="https://facebook.com/kenmux/"><i class="fa fa-facebook-square"></i></a><a href="https://xiwan.info/feed.xml"><i class="fa fa-rss-square"></i></a></span>
+      <span>&copy; 2016</span>
+    </footer>
   </body>
 </html>
