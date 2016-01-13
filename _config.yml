@@ -4,7 +4,7 @@
 url: "https://xiwan.info"
 #baseurl: "/contrast" # comment out if in root directory
 title: "Justme0 的博客"
-author: "Victor Jiang"
+author: "Justme0"
 #email: "kenmux@gmail.com"
 description: "擷英採華，以備不需！"
 #subheading: "Really cool blog about ... something"
@@ -72,7 +72,7 @@ links:
 #paginate_path: "/archives/page/:num"
 
 # Some other limits
-post_limit: 5
+post_limit: 10
 rss_limit: 5
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
