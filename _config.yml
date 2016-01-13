@@ -3,9 +3,9 @@
 #
 url: "https://xiwan.info"
 #baseurl: "/contrast" # comment out if in root directory
-title: "西灣筆記"
-author: "Kenmux Lee"
-email: "kenmux@gmail.com"
+title: "Justme0 的博客"
+author: "Victor Jiang"
+#email: "kenmux@gmail.com"
 description: "擷英採華，以備不需！"
 #subheading: "Really cool blog about ... something"
 
@@ -25,9 +25,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 highlighter: pygments
 
-#markdown: kramdown # [ maruku | rdiscount | kramdown | redcarpet ]
-#kramdown:
-#    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+markdown: kramdown # [ maruku | rdiscount | kramdown | redcarpet ]
+kramdown:
+    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
 #markdown: redcarpet
 #redcarpet:

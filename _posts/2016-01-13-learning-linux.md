@@ -6,23 +6,20 @@ comments: true
 安装完 Ubuntu 后可做这些：
 
 aaaa
-$$ B \nothing A $$
-$ B \nothing A $
+$$ B_A $$
+aaa
+$ B_A $
 aaa
 
-``` bash
+{% highlight bash %}
 安装微软的一些字体
 $ sudo apt-get install ttf-mscorefonts-installer
 
 刷新字体缓存
 $ fc-cache -fv
-```
+{% endhighlight %}
 
-```ruby
-print 3
-```
-
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 int main() {
@@ -30,4 +27,4 @@ int main() {
 
   return 0;
 }
-```
+{% endhighlight %}
