@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<!--
-        redirect users to the https version of the website.
-        but: only check when on the production domain, as set in _config.yml.
-    -->
-<script type="text/javascript">
+    <head>
+        
+        <!--
+            redirect users to the https version of the website.
+            but: only check when on the production domain, as set in _config.yml.
+        -->
+        <script type="text/javascript">
 var host = "xiwan.info";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
 window.location = window.location.toString().replace(/^http:/, "https:");
-</script>
+        </script>
+        
+        <!-- Niklas Buschmann 2015 MIT <http://github.com/niklasbuschmann> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <meta name="description" content="撷英采华，以备不需">
+        <title> 首頁 › Justme0 的博客</title>
+        <link rel="canonical" href="https://xiwan.info/">
+        <link href="/main.css" rel="stylesheet" type="text/css">
+        <!-- Fonts -->
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+        <!-- RSS -->
+        <link rel="alternate" type="application/rss+xml" title="Justme0 的博客 &raquo; Feed" href="/feed.xml">
+        <!-- Comments
+            
+            
+            -->
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-67237444-1', 'auto');
+            ga('require', 'linkid');
+            ga('send', 'pageview');
+        </script>
+        <!--
+            <script src="http://kramdown.rubyforge.org/MathJax/MathJax.js" type="text/javascript"></script>
+            -->
+        <script type="text/javascript" src="http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML">
+        </script>
+    </head>
 
-<!-- Niklas Buschmann 2015 MIT <http://github.com/niklasbuschmann> -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-
-<meta name="description" content="擷英採華，以備不需！">
-<title> 首頁 › Justme0 的博客</title>
-<link rel="canonical" href="https://xiwan.info/index.html">
-<link href="/main.css" rel="stylesheet" type="text/css">
-<!-- Fonts -->
-<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-<!-- RSS -->
-<link rel="alternate" type="application/rss+xml" title="Justme0 的博客 &raquo; Feed" href="/feed.xml">
-<!-- Comments -->
-
-
-<!-- Icons -->
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/assets/icons/favicon-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/assets/icons/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-67237444-1', 'auto');
-ga('require', 'linkid');
-ga('send', 'pageview');
-</script>
-<script src="http://kramdown.rubyforge.org/MathJax/MathJax.js" type="text/javascript"></script>
-</head>
-
-<body>
-<header>
-    <h1><a href="/">Justme0 的博客</a></h1><h2><a href="/about/index.html">擷英採華，以備不需！</a></h2>
-    <nav>
-        <ul>
-            <li><a href="/index.html" id="selected">首頁</a></li> <li><a href="/archive/index.html">舊檔</a></li> <li><a href="/about/index.html">關於</a></li> 
-        </ul>
-    </nav>
-</header>
-
-
-
+    <body>
+        <header>
+            <h1><a href="/">Justme0 的博客</a></h1><h2><a href="/about/index.html">撷英采华，以备不需</a></h2>
+            <nav>
+                <ul>
+                       
+                </ul>
+            </nav>
+        </header>
+        
+        
+        
 <article>
   <header>
-    <h2><a href="/archive/learning-linux.html">使用 Linux 有感</a></h2>
+    <h2><a href="/archive/learning-linux.html">学习 Linux 有感</a></h2>
     <p><time datetime="2016-01-13T00:00:00+08:00">Jan 13, 2016</time> • </p>
   </header>
   <div>
-    <p>安装完 Ubuntu 后可做这些：</p>
+    <p>安装完 Ubuntu 后可做这些：<br />
+  <script type="math/tex">\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)</script><br />
+  aaa</p>
 
-<p>aaaa<br />
-<script type="math/tex">B_A</script><br />
-aaa<br />
-$ B_A $<br />
-aaa</p>
-
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">安装微软的一些字体
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">安装微软的一些字体
 <span class="nv">$ </span>sudo apt-get install ttf-mscorefonts-installer
 
 刷新字体缓存
-<span class="nv">$ </span><span class="nb">fc</span>-cache -fv</code></pre></div>
+<span class="nv">$ </span><span class="nb">fc</span>-cache -fv</code></pre></figure>
 
-<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello, world!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 
   </div>
   <footer>
-    <p><a href="/archive/learning-linux.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/learning-linux.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -115,7 +116,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/book.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/book.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -139,7 +140,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/how-to-write-a-git-commit-message.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/how-to-write-a-git-commit-message.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -165,7 +166,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/2015-the-42nd-week-work-note.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/2015-the-42nd-week-work-note.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -197,7 +198,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/use-google-webmasters-optimize-site-search-result.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/use-google-webmasters-optimize-site-search-result.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -222,7 +223,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/string-split-strtok-strtok-r-strsep.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/string-split-strtok-strtok-r-strsep.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -246,7 +247,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/git-correct-commits-of-author-info.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/git-correct-commits-of-author-info.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -272,7 +273,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/github-pages-use-custom-domain-name.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/github-pages-use-custom-domain-name.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -289,7 +290,7 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/collection-cell-nil-solution.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/collection-cell-nil-solution.html">More &raquo;</a></p>
   </footer>
 </article>
 
@@ -305,214 +306,15 @@ aaa</p>
 
   </div>
   <footer>
-    <p><a href="/archive/run-jekyll-on-windows.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/gui-prototyping-tool-pencil.html">圖形使用者介面原型工具：Pencil</a></h2>
-    <p><time datetime="2014-12-14T18:00:00+08:00">Dec 14, 2014</time> • Pencil, GUI Prototyping Tool</p>
-  </header>
-  <div>
-    <p>這一陣子，忙著設計蘋果應用的介面。但是！沒有設計工具！！俗話說的好，「巧婦難為無米之炊」，這可不行！！！本著「能用、可用」的原則，狠狠地在網路上搜刮了一番，總算找到了這款開源的圖形使用者介面原型工具：Pencil。</p>
-
-<h1 id="pencil">關於Pencil</h1>
-<p>軟體名稱：Evlus Pencil  <br />
-軟體主頁：<a href="http://pencil.evolus.vn/">http://pencil.evolus.vn/</a>  <br />
-軟體版本：Mac版2.0.6，Windows版2.0.5  <br />
-一款開源的圖形使用者介面原型工具，遵循GPL2.0，可運作於所有平臺。內建有大量的形狀集合，可以勝任各種介面的設計工作；當然，也可以自己定義專屬形狀，以滿足需求。除了保存為Pencil專案檔案格式外，亦支持導出為其他常見的檔案格式：PNG、PDF、SVG、以及ODT。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/gui-prototyping-tool-pencil.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/mega-cloud-drive-introduction.html">MEGA雲端硬碟簡介</a></h2>
-    <p><time datetime="2014-12-07T18:00:00+08:00">Dec 7, 2014</time> • MEGA, Cloud Drive</p>
-  </header>
-  <div>
-    <p>MEGA雲端硬碟，前身Megaupload，提供了50GB 雲端儲存同步空間，並提供了對應的同步客戶端軟體以支持不同的作業系統。不同於其他家，MEGA以「隱私安全」為賣點。</p>
-
-<h1 id="mega">關於MEGA雲端硬碟</h1>
-<p>網站主頁：<a href="https://mega.co.nz/">https://mega.co.nz/</a>  <br />
-相關軟體：MEGA Mobile Apps、MEGA Sync Client、MEGA Chrome App、 MEGA Firefox App</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/mega-cloud-drive-introduction.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/subtree-detach-subdirectory-into-separate-repository.html">使用subtree將子目錄分離為獨立的Git存儲庫</a></h2>
-    <p><time datetime="2014-11-30T18:00:00+08:00">Nov 30, 2014</time> • Git, Subtree, Submodule</p>
-  </header>
-  <div>
-    <p>當一個專案在開發一段時間後，可能會有將某個子目錄單獨分離出來的需求。在subtree之前，可能需要比較繁瑣的步驟；不過現在，這也成為了一件輕鬆之事。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/subtree-detach-subdirectory-into-separate-repository.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/git-set-up-remote-repo-do-initial-push.html">創建Git遠端存儲庫並做初次推送</a></h2>
-    <p><time datetime="2014-11-23T18:00:00+08:00">Nov 23, 2014</time> • Git</p>
-  </header>
-  <div>
-    <p>本文介紹如何創建存儲庫並做初次推送。注：本文參考自這篇文章：<a href="http://thelucid.com/2008/12/02/git-setting-up-a-remote-repository-and-doing-an-initial-push/">GIT – SETTING UP A REMOTE REPOSITORY AND DOING AN INITIAL PUSH</a>，感興趣的可以戳進去看看。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/git-set-up-remote-repo-do-initial-push.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/macosx-folder-name-localization.html">Mac OS X檔案夾名稱本土化</a></h2>
-    <p><time datetime="2014-11-16T18:00:00+08:00">Nov 16, 2014</time> • Mac OS X, Localization, Chinese</p>
-  </header>
-  <div>
-    <p>當打開Finder時，會看到一些系統預設檔案夾名稱顯示為中文（如「下載項目」、「圖片」等等），而實際上它們都是英文的。從英文到中文，這就是「本土化」。當然，我們也可以對自己的檔案夾做同樣的「本土化」。本文即以Mac OS X 10.9.4為例，講解如何進行檔案夾名稱的「本土化」。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/macosx-folder-name-localization.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/windows-disk-manager-tool-diskpart.html">Windows磁碟管理工具：Diskpart</a></h2>
-    <p><time datetime="2014-11-09T18:00:00+08:00">Nov 9, 2014</time> • Windows, Diskpart</p>
-  </header>
-  <div>
-    <p>本文介紹的是，Windows內建的基於命令列的磁碟管理工具：Diskpart。</p>
-
-<h1 id="diskpart">關於 Diskpart</h1>
-
-<p>Diskpart，亦即 Diskpart.efi 公用程式，內建於Windows XP及其後的視窗作業系統中；此公用程式可讓您從指令碼、遠端工作階段、或其他命令提示字元來設定儲存裝置。  <br />
-Diskpart和許多指令行公用程式不同，因為它不是在「單行」模式中操作。相反的，此公用程式是先啟動，然後從標準輸入/輸出(I/O)讀取指令。這些指令可以導向任何磁碟、磁碟分割或磁碟區。  <br />
-參見：<a href="http://support.microsoft.com/kb/300415/zh-tw">http://support.microsoft.com/kb/300415/zh-tw</a></p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/windows-disk-manager-tool-diskpart.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/wordpress-migrate-to-new-host.html">WordPress網站手動搬家</a></h2>
-    <p><time datetime="2014-10-19T18:00:00+08:00">Oct 19, 2014</time> • WordPress, Migration</p>
-  </header>
-  <div>
-    <p>前面提過，本站原來是使用byethost主機的，後來出了點小插曲，改用hostinger主機了。期間手動做了次網站搬家，算是寶貴的經驗吧，於是做了下筆記。</p>
-
-<p>WordPress網站搬家，主要涉及到四個方面：</p>
-
-<ul>
-  <li><a href="/archive/wordpress-migrate-to-new-host.html#mysql-database-migrate">MySQL資料庫搬移</a></li>
-  <li><a href="/archive/wordpress-migrate-to-new-host.html#wordpress-files-migrate">虛擬主機檔案搬移</a></li>
-  <li><a href="/archive/wordpress-migrate-to-new-host.html#wp-config-setting">wp-config.php設定</a></li>
-  <li><a href="/archive/wordpress-migrate-to-new-host.html#domain-bind-again">網域重新綁定</a></li>
-</ul>
-
-<p>注：這裡，舊主機為byethost主機，新主機為hostinger主機。當然了，對於任何主機來說，步驟都大致相同。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/wordpress-migrate-to-new-host.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/wordpress-bind-domain-name.html">WordPress網站綁定網域名稱</a></h2>
-    <p><time datetime="2014-10-12T18:00:00+08:00">Oct 12, 2014</time> • WordPress, Domain Name, Nameserver</p>
-  </header>
-  <div>
-    <p>本文介紹如何給WordPress網站綁定Godaddy網域名稱，涉及到三個方面的設定：</p>
-
-<ul>
-  <li><a href="/archive/wordpress-bind-domain-name.html#vps-setting">虛擬主機</a></li>
-  <li><a href="/archive/wordpress-bind-domain-name.html#godaddy-domain-name-setting">Godaddy網域名稱</a></li>
-  <li><a href="/archive/wordpress-bind-domain-name.html#wordpress-setting">WordPress軟體</a></li>
-</ul>
-
-<p>本文假定已經擁有了Godaddy網域名稱，故不再贅述如何購買Godaddy網域名稱。  <br />
-注：本文圖例中，虛擬主機為Hostinger主機、Godaddy網域名稱為XIWAN.INFO。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/wordpress-bind-domain-name.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/wordpress-backup-to-google-drive.html">WordPress備份到谷歌雲端硬碟</a></h2>
-    <p><time datetime="2014-10-05T18:00:00+08:00">Oct 5, 2014</time> • WordPress, Updraftplus</p>
-  </header>
-  <div>
-    <p>本文介紹如何使用Updraftplus將WordPress備份到谷歌雲端硬碟，參考自這篇文章：<a href="http://blog.netsh.org/posts/wordpress-google-drive_1493.netsh.html">备份WordPress到Google Drive: UpdraftPlus</a>，感興趣的可以戳進去看看。</p>
-
-<h1 id="updraftplus">關於Updraftplus</h1>
-
-<p>外掛名稱：UpdraftPlus - Backup/Restore  <br />
-外掛首頁：<a href="https://wordpress.org/plugins/updraftplus/">https://wordpress.org/plugins/updraftplus/</a>  <br />
-非常強大的WordPress備份和回復外掛，一鍵備份和回復，支持多種備份方式（ Amazon S3、Dropbox、Google Drive、FTP、Email等等），支持排程自動備份，檔案和數據庫也可以分開備份。</p>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/wordpress-backup-to-google-drive.html">閱讀更多 &raquo;</a></p>
-  </footer>
-</article>
-
-<article>
-  <header>
-    <h2><a href="/archive/wordpress-missed-schedule-solution.html">WordPress錯失排程解決方案</a></h2>
-    <p><time datetime="2014-09-28T18:00:00+08:00">Sep 28, 2014</time> • WordPress, Missed Schedule</p>
-  </header>
-  <div>
-    <p>明明設定好了排程，可到了時間、文章卻遲遲不能發表出來。登入後台查看了下狀態：「錯失排程(missed schedule)」。蝦米？！這是什麼狀況？鬱悶之餘，在網路上搜尋了一番，總算找到解決方案。</p>
-
-<p>注：</p>
-
-<ul>
-  <li>這篇文章的方法來自於<a href="https://sofree.cc">香腸炒魷魚</a>的一篇文章：<a href="http://sofree.cc/wp-missed-schedule/">解決WordPress自動排程失敗的三個方法(missed schedule)</a>，感興趣的可以戳進去看看。</li>
-  <li>請盡量只採用一個解決方案！這裡羅列的方案，並不能保證能夠互不干擾地協同工作！</li>
-</ul>
-
-
-  </div>
-  <footer>
-    <p><a href="/archive/wordpress-missed-schedule-solution.html">閱讀更多 &raquo;</a></p>
+    <p><a href="/archive/run-jekyll-on-windows.html">More &raquo;</a></p>
   </footer>
 </article>
 
 
-<footer>
-    <span><a href="mailto:">Victor Jiang</a></span>
-    <span><a href="https://github.com/kenmux/"><i class="fa fa-github-square"></i></a><a href="https://twitter.com/kenmuxlee/"><i class="fa fa-twitter-square"></i></a><a href="https://plus.google.com/+KenmuxDe"><i class="fa fa-google-plus-square"></i></a><a href="https://facebook.com/kenmux/"><i class="fa fa-facebook-square"></i></a><a href="https://xiwan.info/feed.xml"><i class="fa fa-rss-square"></i></a></span>
-    <span>&copy; 2016</span>
-</footer>
-</body>
+        <footer>
+            <span><a href="mailto:">Justme0</a></span>
+            <span><a href="https://github.com/justme0/"><i class="fa fa-github-square"></i></a><a href="http://blog.csdn.net/justme0"><i class="fa fa-csdn-square"></i></a><a href="https://xiwan.info/feed.xml"><i class="fa fa-rss-square"></i></a></span>
+            <span>&copy; 2016</span>
+        </footer>
+    </body>
 </html>

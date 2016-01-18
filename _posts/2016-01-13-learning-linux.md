@@ -1,15 +1,13 @@
 ---
-title: "使用 Linux 有感"
+title: "学习 Linux 有感"
 comments: true
 ---
 
 安装完 Ubuntu 后可做这些：
-
-aaaa
-$$ B_A $$
-aaa
-$ B_A $
-aaa
+  $$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+  $$
+  aaa
 
 {% highlight bash %}
 安装微软的一些字体

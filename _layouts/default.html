@@ -3,18 +3,38 @@ layout: blank
 ---
 
 <article>
-  <header>
-    <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-    <p>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.tags %} • {{ page.tags | join: ', ' }}{% endif %}</p>
-  </header>
-  <div>
-    {{ content }}
-  </div>
-  {% if site.comments.isso and page.comments %}
-  <div id="isso-thread"></div>
-  {% endif %}
-  {% if site.comments.disqus and page.comments %}
-  <div id="disqus_thread"></div>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  {% endif %}
+    <header>
+        <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+        <p>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.tags %} • {{ page.tags | join: ', ' }}{% endif %}</p>
+    </header>
+    <div>
+        {{ content }}
+    </div>
+    {% if site.comments.isso and page.comments %}
+        <div id="isso-thread"></div>
+    {% endif %}
+    {% if site.comments.disqus and page.comments %}
+        <!-- 多说评论框 start -->
+        <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
+        <!-- 多说评论框 end -->
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"justme0"};
+            (function() {
+                var ds = document.createElement('script');
+                ds.type = 'text/javascript';ds.async = true;
+                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//static.duoshuo.com/embed.unstable.js';
+                ds.charset = 'UTF-8';
+                (document.getElementsByTagName('head')[0]
+                 || document.getElementsByTagName('body')[0]).appendChild(ds);
+            })();
+        </script>
+        <!-- 多说公共JS代码 end -->
+
+        <!--
+            <div id="disqus_thread"></div>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        -->
+    {% endif %}
 </article>

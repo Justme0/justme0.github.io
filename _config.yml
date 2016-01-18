@@ -6,7 +6,7 @@ url: "https://xiwan.info"
 title: "Justme0 的博客"
 author: "Justme0"
 #email: "kenmux@gmail.com"
-description: "擷英採華，以備不需！"
+description: "撷英采华，以备不需"
 #subheading: "Really cool blog about ... something"
 
 # This is the default format:
@@ -36,12 +36,12 @@ kramdown:
 # Settings for <!-- more --> tag
 #
 excerpt_separator: "<!-- more -->"
-more: 閱讀更多
+more: More
 
 # Settings for comments helper
 #
-comments:
-    disqus: "xiwan"
+#comments:
+#    disqus: "xiwan"
 #    isso: "comments.mysite.org"
 
 style:
@@ -53,17 +53,18 @@ style:
 #    headline: "#06f"
     description: "white"
     article:
-        odd: "#ffffff"
+        odd: "#eeeeee"
         even: "#222222"
 
 links:
-    - github: "https://github.com/kenmux/"
-    - twitter: "https://twitter.com/kenmuxlee/"
-    - google-plus: "https://plus.google.com/+KenmuxDe"
+    - github: "https://github.com/justme0/"
+    - csdn: "http://blog.csdn.net/justme0"
+#    - twitter: "https://twitter.com/kenmuxlee/"
+#    - google-plus: "https://plus.google.com/+KenmuxDe"
 #    - reddit: "https://www.reddit.com/user/kenmux/"
 #    - youtube: "https://www.youtube.com/user/kenmux"
 #    - steam: "http://steamcommunity.com/id/kenmux/"
-    - facebook: "https://facebook.com/kenmux/"
+#    - facebook: "https://facebook.com/kenmux/"
     - rss: "https://xiwan.info/feed.xml"
 
 # Settings for pagination
@@ -84,4 +85,4 @@ date_format: "ordinal"
 
 # Define the order of pages in the navigation bar
 #
-nav_pages: ["首頁", "舊檔", "關於"]
+nav_pages: ["Home", "Archive", "About"]
