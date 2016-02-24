@@ -23,7 +23,7 @@ enforce_ssl: xiwan.info
 #
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
-highlighter: pygments
+highlighter: rouge
 
 markdown: kramdown # [ maruku | rdiscount | kramdown | redcarpet ]
 #kramdown:

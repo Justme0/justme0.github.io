@@ -157,15 +157,15 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <script type="math/tex">\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)</script></p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">安装微软的一些字体
-<span class="nv">$ </span>sudo apt-get install ttf-mscorefonts-installer
+<span class="gp">$ </span>sudo apt-get install ttf-mscorefonts-installer
 
 刷新字体缓存
-<span class="nv">$ </span><span class="nb">fc</span>-cache -fv</code></pre></figure>
+<span class="gp">$ </span><span class="nb">fc</span>-cache -fv</code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;</span>
-
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello, world!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello, world!"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
@@ -307,7 +307,7 @@ window.location = window.location.toString().replace(/^http:/, "https:");
 <p>在分述它們的不同之處之前、先說說它們的共同之處吧：</p>
 
 <ul>
-  <li>其一、呼叫函式會修改原字串內容（將切割符改為<code>'\0'</code>），故待切割字串不可為無法修改的字串字面常數(string literal)。</li>
+  <li>其一、呼叫函式會修改原字串內容（將切割符改為<code class="highlighter-rouge">'\0'</code>），故待切割字串不可為無法修改的字串字面常數(string literal)。</li>
   <li>其二、單次呼叫只能完成一次切割、而不是直接提供切割完畢的字串數組。</li>
   <li>其三、關於切割符字串（更確切的說、切割符集合），其內任一字符（而不是整體）都是切割符，而且在每次呼叫函式時都可以依據需求採用相同/不同的字串。</li>
 </ul>
