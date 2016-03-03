@@ -14,6 +14,8 @@ permalink: /about/index.html
 - 2010年开始计算机专业的学习，接触 C 语言
 
 # 本站简史
-- 2016.01.13 fork <a href="https://github.com/kenmux/kenmux.github.io" target="_blank">Kenmux Lee's theme</a>, Thanks!
-- 2016.01.10 将数据托管到 Github
-- 2016.01.09 购买域名 [justme0.com](http://justme0.com/)
+2016年
+
+- 01月13日: fork <a href="https://github.com/kenmux/kenmux.github.io" target="_blank">Kenmux Lee's theme</a>, Thanks!
+- 01月10日: 将数据托管到 Github
+- 01月09日: 购买域名 [justme0.com](http://justme0.com/)
