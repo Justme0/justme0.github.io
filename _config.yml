@@ -17,7 +17,7 @@ description: "撷英采华，以备不需"
 permalink: /archive/:title.html
 
 # Don't include protocol, just the domain
-enforce_ssl: justme0.com
+#enforce_ssl: justme0.com
 
 # Jekyll build & syntax highlighting settings
 #
@@ -26,8 +26,8 @@ defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", 
 highlighter: rouge
 
 markdown: kramdown # [ maruku | rdiscount | kramdown | redcarpet ]
-#kramdown:
-#    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+kramdown:
+    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
 #markdown: redcarpet
 #redcarpet:
