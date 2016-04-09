@@ -27,6 +27,6 @@ Thumbs.db
 
 # Jekyll related items #
 ########################
-_site/
+_site
 .sass-cache/
 .jekyll-metadata
