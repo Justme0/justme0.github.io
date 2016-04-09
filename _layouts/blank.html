@@ -94,19 +94,17 @@
             <span><a href="mailto:{% if page.email %}{{ page.email }}{% else %}{{ site.email }}{% endif %}">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></span>
             -->
             <span>Justme0</span>
+            <!--
             <style type="text/css">
-                .fa-csdn-square {
-                    background: url(
+                .fa-csdn-square:before {
+                    content: url(../assets/icons/csdn.ico);
                 }
             </style>
+            -->
             <span>
                 {% for link_hash in site.links %}
                     {% for link in link_hash %}
-                        {% if link[0] == "csdn" %}
-                            <a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>
-                        {% else %}
-                            <a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>
-                        {% endif %}
+                        <a href="{{ link[1] }}"><i class="fa fa-{{ link[0] }}-square"></i></a>
                     {% endfor %}
                 {% endfor %}
             </span>
