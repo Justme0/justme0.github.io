@@ -46,7 +46,7 @@ comments:
 
 style:
 #    body: "whitesmoke"
-    padding: 30%
+    padding: 31%
     anchor: "#46f"
     serif-heading: true
     nav: "#181818"
