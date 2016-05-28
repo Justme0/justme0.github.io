@@ -23,12 +23,13 @@ permalink: /archive/:title.html
 #
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
+
 highlighter: rouge
 
+#markdown: redcarpet
 markdown: kramdown # [ maruku | rdiscount | kramdown | redcarpet ]
 kramdown:
     input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-
 #markdown: redcarpet
 #redcarpet:
 #    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
@@ -41,12 +42,13 @@ more: More
 # Settings for comments helper
 #
 comments:
-    disqus: "xiwan"
+    #disqus: "xiwan"
     isso: "comments.mysite.org"
 
 style:
-#    body: "whitesmoke"
-    padding: 31%
+    #body: "whitesmoke"
+#   padding: 31%
+    padding: 30%
     anchor: "#46f"
     serif-heading: true
     nav: "#181818"
