@@ -16,7 +16,7 @@ layout: blank
     {% if site.comments.isso and page.comments %}
         <div id="isso-thread"></div>
     {% endif %}
-    {% if site.comments.disqus and page.comments %}
+    {% if page.comments %}
         <!-- 多说评论框 start -->
         <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
         <!-- 多说评论框 end -->

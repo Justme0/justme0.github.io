@@ -1,6 +1,7 @@
 ---
 title: "About"
 permalink: /about/index.html
+comments: true
 ---
 
 ### 一些重要的时间点
