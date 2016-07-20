@@ -23,6 +23,8 @@ comments: true
 # 2. 实现
 一般地，编译器实现 Lambda 表达式时，将其转化为函数对象（仿函数 functor）。比如上面的例子将转化为
 
+<!-- more -->
+
 {% highlight cpp %}
 struct A {
 public:
