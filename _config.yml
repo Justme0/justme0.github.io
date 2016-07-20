@@ -43,7 +43,7 @@ more: More
 #
 comments:
     #disqus: "xiwan"
-    isso: "comments.mysite.org"
+    #isso: "comments.mysite.org"
 
 style:
     #body: "whitesmoke"
@@ -75,7 +75,7 @@ links:
 #paginate_path: "/archives/page/:num"
 
 # Some other limits
-post_limit: 10
+post_limit: 7
 rss_limit: 5
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
