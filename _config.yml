@@ -88,3 +88,7 @@ date_format: "ordinal"
 # Define the order of pages in the navigation bar
 #
 nav_pages: ["Home", "Archive", "About"]
+
+plugins:
+    - jekyll-paginate
+    - jekyll-sitemap

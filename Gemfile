@@ -1,3 +1,3 @@
-source 'https://ruby.taobao.org'
-#gem 'redcarpet'
+source 'https://gems.ruby-china.org'
+
 gem 'github-pages', group: :jekyll_plugins
