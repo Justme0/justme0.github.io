@@ -1,18 +1,11 @@
 ---
-title: "【译】什么是C/C++标准库"
+title: "【译】什么是 C/C++ 标准库"
 comments: true
 ---
 
-<div style="background-color: #e0e0e0;">
-<p>
-原文：<a href="https://www.internalpointers.com/post/c-c-standard-library" target="_blank">https://www.internalpointers.com/post/c-c-standard-library</a> on Apr 9, 2018 by TRIANGLES
-</p>
-<p>
-译者序：这篇文章介绍了C/C++标准库在标准中的说明及各平台的实现，作者查阅了很多资料，对梳理标准库概念有所帮助，最后一段还提到一个有意思的比赛 : )
-</p>
-</div>
+【译者序】 原文链接：<a href="https://www.internalpointers.com/post/c-c-standard-library" target="_blank">https://www.internalpointers.com/post/c-c-standard-library</a> on Apr 9, 2018 by TRIANGLES。这篇文章介绍了C/C++标准库在标准中的说明及各平台的实现，作者查阅了很多资料，对梳理标准库概念有所帮助，最后一段还提到一个有意思的比赛 : )
 
-引言：本文简要介绍了C/C++开发领域中标准库所扮演的角色，以及标准库在各操作系统中是如何实现的。
+本文简要介绍了C/C++开发领域中标准库所扮演的角色，以及标准库在各操作系统中是如何实现的。
 
 使用C++有一段时间了，一开始经常让我困惑的是其*内部原理*：我使用的核心函数和类来自哪里？是谁写的？它们打包放在我电脑上什么地方？是否有一份*官方手册*？
 

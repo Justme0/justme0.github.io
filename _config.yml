@@ -52,7 +52,7 @@ style:
 #    headline: "#06f"
     description: "white"
     article:
-        odd: "#F9FAE1"
+        odd: "#F9FAEC"
         even: "#222222"
 
 links:
