@@ -80,11 +80,14 @@
         -->
         <!-- <script type="text/javascript" src="http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
         -->
+        <!-- https://docs.mathjax.org/en/latest/tex.html
+        -->
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 tex2jax: {
                     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-                    inlineMath: [['$', '$']]
+                    inlineMath: [['$','$'], ['\\(','\\)']],
+                    processEscapes: true
                 }
             });
         </script>
