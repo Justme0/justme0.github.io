@@ -17,6 +17,7 @@
         <meta name="author" content="{{ page.author }}">
         {% endif %}
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>
             {% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}
         </title>
@@ -196,11 +197,10 @@
             </span>
         </footer>
 
-
+        {% if jekyll.environment != "development" %}
         <!-- visitor map  https://clustrmaps.com/profile/1bi4e/widget/customize  -->
         <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=D0L14TjoAA4Z49lPkIU5xp25LgO1aJUarUE9gk2kt8k&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
-
-
+        {% endif %}
 
     </body>
 
