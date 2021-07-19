@@ -17,7 +17,7 @@ layout: blank
     {% endif %}
 
     <!-- disqus comment start, added on Mar 25, 2017 -->
-    <div id="disqus_thread"></div>
+    <!-- <div id="disqus_thread"></div>
     <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -37,6 +37,24 @@ layout: blank
     </script>
 
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    -->
     <!-- disqus end -->
+
+    <!-- 2021.07.19 use gitalk -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script>
+    var gitalk = new Gitalk({
+        clientID: '7414935d32ae667c2b1a',
+        clientSecret: 'dc9b52474756049a5cc1ef731b0191e42192af89',
+        repo: 'justme0.github.io',
+        owner: 'justme0',
+        admin: ['justme0'],
+        id: location.pathname,      // 请确保你的 location 连接小于 50 个字符，否则，插件会生成失败
+        distractionFreeMode: false  // 专注模式
+	})
+    gitalk.render('gitalk-container')
+    </script>
 
 </article>
