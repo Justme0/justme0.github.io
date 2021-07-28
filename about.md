@@ -22,3 +22,4 @@ comments: true
 - 2016-04-09 加入 Google Analytics
 - 2021-06-01 加入地图形式的用户位置统计插件 ClustrMaps
 - 2021-07-20 加入 GitHub issue 评论插件 Gitalk。博客最初使用国内的“多说”，后来停止运营。之后使用国外的Disqus，国内没法访问，目前换成GitHub issue插件。
+- 2021-07-29 404页面接入腾讯公益寻人页面 e.g. <a href="/aaaindd" target="_blank">justme0/aaaindd</a>
