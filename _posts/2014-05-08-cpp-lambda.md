@@ -4,7 +4,7 @@ comments: true
 ---
 前些天买了本《程序设计语言理论》，看了简介，Lambda 演算贯穿整个理论，尤其在函数式语言中具有重要作用。C++11 中也加入了 Lambda 表达式，下面做个总结。
 
-<p style="text-align:center"><img src="../assets/pic/lambda.png" align="middle" width="204" height="300" alt=""></p>
+<p style="text-align:center"><img src="../assets/pic/lambda.png" align="middle" width="204" alt=""></p>
 <br />
 
 # 1. 一个简单的例子
