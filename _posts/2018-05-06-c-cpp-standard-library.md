@@ -25,14 +25,14 @@ comments: true
 例如，以下摘自<a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf" target="_blank">C标准</a>第一部分中对`main`函数的定义：
 
 <p style="text-align: center">
-  <img src="https://raw.githubusercontent.com/monocasual/internalpointers-files/master/2018/01/main-implementation-c-standard.png" align="middle" alt="main">
+  <img src="https://www.internalpointers.com/img/2018/01/main-implementation-c-standard.png">
   <br />
   1. 程序开头调用<code>main</code>函数的定义
 </p>
 
 下面的例子摘自上面同样的文档，对C中某个API的说明 - `fmin`函数：
 <p style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/monocasual/internalpointers-files/master/2018/01/fmin-function-c-standard.png">
+  <img src=https://www.internalpointers.com/img/2018/01/fmin-function-c-standard.png">
   <br />
   2. 头文件<code>math.h</code>中<code>fmin</code>函数的定义
 </p>
