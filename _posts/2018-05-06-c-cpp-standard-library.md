@@ -31,8 +31,8 @@ comments: true
 </p>
 
 下面的例子摘自上面同样的文档，对C中某个API的说明 - `fmin`函数：
-<p style="text-align: center;">
-  <img src=https://www.internalpointers.com/img/2018/01/fmin-function-c-standard.png">
+<p style="text-align: center">
+  <img src="https://www.internalpointers.com/img/2018/01/fmin-function-c-standard.png">
   <br />
   2. 头文件<code>math.h</code>中<code>fmin</code>函数的定义
 </p>
