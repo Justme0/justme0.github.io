@@ -193,9 +193,13 @@
                 {% endfor %} {% endfor %}
             </span>
             <span>
-                &copy; {{ site.time | date: "%Y" }}
+                &copy; <span id="copyright-year">{{ site.time | date: "%Y" }}</span>
             </span>
         </footer>
+        <script>
+            // 动态更新版权年份
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
 
         {% if jekyll.environment != "development" %}
         <!-- visitor map  https://clustrmaps.com/profile/1bi4e/widget/customize  -->
