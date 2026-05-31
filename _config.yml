@@ -21,7 +21,7 @@ permalink: /archive/:title.html
 
 # Jekyll build & syntax highlighting settings
 #
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "vendor/bundle"]
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 
 highlighter: rouge # [ rouge | pygments ]
